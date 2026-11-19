@@ -1,0 +1,44 @@
+{
+  "_comentario": "Config usada no reel de exemplo v2 (@perfil-exemplo). Copie, troque caminhos e tempos. Tempos em segundos do BRUTO. 'a' = apresentador, 'pilha' = tela dividida (topo = clipe, base = 'T' apresentador ou outro clipe).",
+  "bruto": "videos/bruto.mov",
+  "palavras": "palavras_bruto.json",
+  "rosto": "rosto.json",
+  "perfil_ref": "perfil_ref/perfil.json",
+  "saida": "reel.mp4",
+  "fonte_wh": [2160, 3840],
+  "clips": {
+    "carro": "clips/30225108.mp4",
+    "clinica": "clips/6998341.mp4",
+    "calculadora": "clips/6964001.mp4",
+    "planilha": "clips/8479056.mp4",
+    "relatorio_graficos": "clips/8293495.mp4",
+    "relatorio_maos": "clips/6781990.mp4"
+  },
+  "clips_vies_vertical": {"relatorio_maos": 0.55},
+  "ritmo": {"alvo_a_s": 1.65},
+  "apresentador": {"cy": 0.36, "base_T": {"f": 0.45, "cy": 0.45}},
+  "segmentos": [
+    {"a": 44.50, "b": 47.76, "tipo": "pilha", "topo": {"clip": "carro", "offs": [28.0, 29.2, 30.3, 31.0]}, "base": "T", "alvo_s": 1.25},
+    {"a": 48.10, "b": 50.64, "tipo": "pilha", "topo": {"clip": "carro", "offs": [28.0, 29.2, 30.3, 31.0]}, "base": "T", "alvo_s": 1.25},
+    {"a": 7.62,  "b": 13.86, "tipo": "a"},
+    {"a": 20.38, "b": 23.80, "tipo": "a"},
+    {"a": 26.26, "b": 36.14, "tipo": "a"},
+    {"a": 37.12, "b": 42.82, "tipo": "a"},
+    {"a": 43.43, "b": 47.76, "tipo": "pilha", "topo": {"clip": "carro", "offs": [8.8, 10.4, 4.2, 26.3, 0.4]}, "base": "T", "alvo_s": 1.25},
+    {"a": 48.10, "b": 50.64, "tipo": "pilha", "topo": {"clip": "carro", "offs": [8.8, 10.4, 4.2, 26.3, 0.4]}, "base": "T", "alvo_s": 1.25},
+    {"a": 50.64, "b": 56.34, "tipo": "a"},
+    {"a": 56.48, "b": 66.95, "tipo": "a"}
+  ],
+  "janelas": [
+    {"a": 12.5, "b": 13.9, "gatilho": "clínica médica",            "topo": {"clip": "clinica", "t": 1.0},            "base": "T"},
+    {"a": 21.6, "b": 22.9, "gatilho": "Simples Nacional",          "topo": {"clip": "calculadora", "t": 1.0},       "base": {"clip": "planilha", "t": 1.0}},
+    {"a": 30.0, "b": 31.3, "gatilho": "lucro presumido",           "topo": {"clip": "planilha", "t": 3.5},          "base": {"clip": "calculadora", "t": 6.0}},
+    {"a": 34.5, "b": 36.1, "gatilho": "redução na carga tributária","topo": {"clip": "relatorio_graficos", "t": 1.0}, "base": {"clip": "relatorio_maos", "t": 1.0}},
+    {"a": 38.8, "b": 40.0, "gatilho": "análise trimestral",        "topo": {"clip": "relatorio_maos", "t": 5.0},    "base": {"clip": "relatorio_graficos", "t": 5.5}}
+  ],
+  "legenda": {
+    "fonte": "Times New Roman", "tamanho": 72, "y_a": 1240, "y_pilha": 960,
+    "corrige": {"T7": "terceiro", "A0": "zero", "assistiu": "insistiu", "intento": "intuito"},
+    "destaque": ["107 mil reais"], "destaque_tamanho": 110
+  }
+}
